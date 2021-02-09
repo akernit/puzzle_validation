@@ -1,3 +1,9 @@
+"""
+The playing field of the logic puzzle has a square shape of 9 × 9 cells.
+The playing field contains cells of different colors that are used in the
+game and white areas that are not used for the game.
+"""
+
 def validate_board(input_list: list) -> bool:
     if len(input_list[0]) != len(input_list) != 9:
         raise ValueError("Puzzle dimension should be 9x9")
