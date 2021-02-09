@@ -19,7 +19,17 @@ def validate_board(input_list: list) -> bool:
     3. Each block of cells of the same color must contain numbers from 1 to 9
     without repetition.
     The validate_board (board) function must return a Boolean value.
-    >>> validate_board(board)
+    >>> validate_board([\
+    "**** ****",\
+    "***1 ****",\
+    "**  3****",\
+    "* 4 1****",\
+    "     9 5 ",\
+    " 6  83  *",\
+    "3   1  **",\
+    "  8  2***",\
+    "  2  ****"\
+    ])
     False
     """
     if len(input_list[0]) != len(input_list) != 9:
