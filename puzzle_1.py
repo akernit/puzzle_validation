@@ -5,6 +5,15 @@ game and white areas that are not used for the game.
 """
 
 def validate_board(input_list: list) -> bool:
+        """
+    The function sets whether the logic puzzle playing field is ready to start the game.
+    The cells of the playing field before the start of the game must be filled according
+    to the following rules:
+    1. The colored cells of each line must contain the numbers 1 to 9 without repetition.
+    2. The colored cells of each column must contain numbers from 1 to 9 without repetition.
+    3. Each block of cells of the same color must contain numbers from 1 to 9 without repetition.
+    The validate_board (board) function must return a Boolean value.
+    """
     if len(input_list[0]) != len(input_list) != 9:
         raise ValueError("Puzzle dimension should be 9x9")
 
